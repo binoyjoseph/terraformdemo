@@ -25,6 +25,6 @@ resource "okta_policy_password" "example" {
 }
 
 resource "okta_policy_rule_password" "example_allow_rule" {
-  policyid              = "okta_policy_password.example.id"
+  policyid              = "${okta_policy_password.example.id}"
   name                  = "Allow Password Reset"
 }
