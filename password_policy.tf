@@ -25,6 +25,6 @@ resource "okta_policy_password" "example" {
 }
 
 resource "okta_policy_rule_password" "Default Rule" {
-  policyId: "00p175p2p8sBBMEYp4x7"
-  name: "Default Rule"
+  policyId              = "00p175p2p8sBBMEYp4x7"
+  name                  = "Default Rule"
 }
