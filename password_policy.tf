@@ -21,5 +21,5 @@ resource "okta_policy_password" "example" {
   status                 = "INACTIVE"
   description            = "Example"
   password_history_count = 4
-  priority               = 5
+  priority               = 4
 }
