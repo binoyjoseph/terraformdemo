@@ -25,6 +25,6 @@ resource "okta_policy_password" "example" {
 }
 
 resource "okta_policy_rule_password" "default_rule" {
-  policyId              = "okta_policy_password.example.id"
+  policyid              = "okta_policy_password.example.id"
   name                  = "Default Rule"
 }
