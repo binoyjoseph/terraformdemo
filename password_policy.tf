@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    okta = {
+      source  = "oktadeveloper/okta"
+      version = "3.5.1"
+    }
+  }
+}
+
 resource "okta_policy_password" "example" {
   name                   = "example"
   status                 = "INACTIVE"
