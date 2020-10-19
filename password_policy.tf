@@ -21,5 +21,10 @@ resource "okta_policy_password" "example" {
   status                 = "INACTIVE"
   description            = "Example"
   password_history_count = 4
-  priority               = 5
+  priority               = 4
+}
+
+resource "okta_policy_rule_password" "Default Rule" {
+  policyId: "00p175p2p8sBBMEYp4x7"
+  name: "Default Rule"
 }
