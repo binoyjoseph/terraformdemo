@@ -24,7 +24,7 @@ resource "okta_policy_password" "example" {
   priority               = 4
 }
 
-resource "okta_policy_rule_password" "default_rule" {
+resource "okta_policy_rule_password" "example_allow_rule" {
   policyid              = "okta_policy_password.example.id"
-  name                  = "Default Rule"
+  name                  = "Allow Password Reset"
 }
