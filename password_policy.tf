@@ -24,7 +24,7 @@ resource "okta_policy_password" "example" {
   priority               = 4
 }
 
-resource "okta_policy_rule_password" "Default Rule" {
-  policyId              = "00p175p2p8sBBMEYp4x7"
+resource "okta_policy_rule_password" "default_rule" {
+  policyId              = "okta_policy_password.example.id"
   name                  = "Default Rule"
 }
