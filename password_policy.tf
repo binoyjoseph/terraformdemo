@@ -17,7 +17,7 @@ provider "okta" {
 }
 
 resource "okta_policy_password" "example" {
-  name                   = "example"
+  name                   = "Some description"
   status                 = "INACTIVE"
   description            = "Example"
   password_history_count = 4
